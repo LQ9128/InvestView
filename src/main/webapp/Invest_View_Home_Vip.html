@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invest_View_Home</title>
+    <link rel="stylesheet" type="text/css" href="css/Invest_View_Home.css"/>
+
+    <link href="cssvip/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="cssvip/style.css" rel='stylesheet' type='text/css' />
+    <!-- font CSS -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- font-awesome icons -->
+    <link href="cssvip/font-awesome.css" rel="stylesheet">
+
+    <script src="jsvip/Chart.js"></script>
+    <!-- //chart -->
+    <!-- js-->
+    <script src="jsvip/jquery-1.11.1.min.js"></script>
+    <script src="jsvip/modernizr.custom.js"></script>
+    <!--webfonts-->
+    <link
+            href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
+            rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+    <!--animate-->
+    <link href="cssvip/animate.css" rel="stylesheet" type="text/css"
+          media="all">
+    <script src="jsvip/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--//end-animate-->
+    <!-- Metis Menu -->
+    <script src="jsvip/metisMenu.min.js"></script>
+    <script src="jsvip/custom.js"></script>
+    <link href="cssvip/custom.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 链接引入失败 -->
+<div style="height: 80px!important;" class="tv-ticker-widgets-header js-ticker-widgets-header">
+    <div id="clock" style="width: 200px !important; left: 5px!important;">
+        <embed src="img/honehone_clock_wh.swf" style="height: 108px;width: 200px">
+    </div>
+
+    <div class="js-ticker-header-widget-container " style="height: 80px!important;">
+        <div class="tv-widget-ticker tv-widget-ticker--fixed-width tv-widget-ticker--header"
+             style="height: 80px!important;">
+            <h1 style="width: 100px;position: absolute;top: 25px;left: 40%"><strong><em>Invest</em></strong></h1>
+            <span class="tv-widget-ticker__loader i-loading">
+            <span class="tv-widget-ticker__loader-item"></span>
+            <span class="tv-widget-ticker__loader-item"></span>
+            <span class="tv-widget-ticker__loader-item"></span>
+        </span>
+            <h1 style="width: 100px;position: absolute;left: 55%;top: 25px"><strong><em>View</em></strong></h1>
+        </div>
+    </div>
+</div>
+<!-- InvestView---heard -->
+<div class="tv-header">
+    <div class="tv-header__inner tv-layout-width" style="position: relative">
+        <div class="tv-header__area tv-header__area--left tv-header__area--desktop">
+            <span class="tv-header__lang-icon tv-header__lang-icon--current-lang"
+                  style="width: 30px;height: 30px;top: 12px;color:cyan">ZH</span>
+        </div>
+
+        <div class="tv-header__area tv-header__area--middle">
+            <form class="tv-header-search js-header-search" method="post" action="/ideas/search/">
+                <label class="tv-header-search__inputwrap">
+                    <tv-autocomplete>
+                        <input type="search" name="query" autocomplete="off" spellcheck="false" value=""
+                               class="tv-header-search__input js-header-search__input" placeholder="搜索">
+                    </tv-autocomplete>
+                    <span class="tv-header-search__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g fill="none" fill-rule="evenodd" stroke="#FFF"><circle cx="7.5" cy="7.5" r="6"/>
+                                <path d="M11.5 11.5L15 15"/>
+                            </g>
+                        </svg>
+                    </span>
+                </label>
+            </form>
+        </div>
+        <!-- InvestView-- Login And Sign -->
+        <!-- <div class="tv-header__area tv-header__area&#45;&#45;right tv-header__area&#45;&#45;desktop">
+             <span class="tv-header__dropdown-text">
+                 <a class="tv-header__link tv-header__link&#45;&#45;signin js-header__signin" href="Invest_View_Login_In.html">
+                     <span class="tv-header__btn tv-header__btn&#45;&#45;signup">登录</span>
+                 </a>
+             </span>
+             <span class="tv-header__dropdown-text">
+                 <a href="Invest_View_Sign_Up.html" class="tv-header__gopro js-ga-join-for-free js-header__gopro-button">
+                     <span class="tv-header__btn tv-header__btn&#45;&#45;signup">免费注册</span>
+                 </a>
+             </span>
+         </div>-->
+    </div>
+    <!--  -->
+    <div class="tv-mainmenu">
+        <ul class="tv-mainmenu__list tv-layout-width">
+            <li class="tv-mainmenu__item"><a href="/ideas/" data-type="ideas">观点</a>
+                <a href="/markets/" data-type="markets">市场</a>
+                <a href="/scripts/" data-type="scripts">脚本</a>
+                <a href="/screener/" data-type="screener">筛选器</a>
+                <a href="/chart/" data-type="chart">图表</a>
+            <li class="tv-mainmenu__item&#45;&#45;right"></li>
+        </ul>
+    </div>
+</div>
+
+<!-- InvestView--Body -->
+
+<div style="background-color: #0072be!important; height: 500px">
+
+</div>
+
+
+<!-- InvestView---footer -->
+<div class="tv-footer js-footer" style="top: 0px">
+    <div class="tv-footer__inner tv-layout-width">
+        <div class="tv-footer__wrap">
+            <div class="tv-footer__column tv-footer__links-group js-expand">
+                <div class="tv-footer__links-group-title js-expand__title">
+                    <span class="tv-footer__title">社区 & 工具</span>
+                    <span class="tv-caret"></span>
+                </div>
+                <div class="tv-footer__links-group-body js-expand__body">
+                    <a class="tv-footer__link" href="">网站规则</a>
+                    <a class="tv-footer__link" href="" target="_blank">聊天</a>
+                    <a class="tv-footer__link" href="">股票筛选器</a>
+                    <a class="tv-footer__link" href="">外汇筛选器</a>
+                    <a class="tv-footer__link" href="">财经日历</a>
+                    <a class="tv-footer__link" href="">App商城</a>
+                </div>
+            </div>
+            <div class="tv-footer__column tv-footer__links-group js-expand">
+                <div class="tv-footer__links-group-title js-expand__title">
+                    <span class="tv-footer__title">商业</span>
+                    <span class="tv-caret"></span>
+                </div>
+                <div class="tv-footer__links-group-body js-expand__body">
+                    <a class="tv-footer__link" href="">网站 & 经纪商解决方案</a>
+                    <a class="tv-footer__link" href="">插件</a>
+                    <a class="tv-footer__link" href="">图表库</a>
+                    <a class="tv-footer__link" href="">交易终端</a>
+                    <a class="tv-footer__link" href="">经纪业务集成</a>
+                    <a class="tv-footer__link" href="">广告</a>
+                    <a class="tv-footer__link" href="">引荐计划</a>
+                    <a class="tv-footer__link" href="">内容流 & RSS</a>
+                </div>
+            </div>
+            <div class="tv-footer__column tv-footer__links-group js-expand">
+                <div class="tv-footer__links-group-title js-expand__title">
+                    <span class="tv-footer__title">支持</span>
+                    <span class="tv-caret"></span>
+                </div>
+                <div class="tv-footer__links-group-body js-expand__body">
+                    <a class="tv-footer__link js-footer-report-issue" href="">联系支持</a>
+                    <a class="tv-footer__link" href="" target="_blank">状态页面</a>
+                    <a class="tv-footer__link" href="" target="_blank">博客</a>
+                    <a class="tv-footer__link" href=""
+                       target="_blank" rel="nofollow">功能请求</a>
+                    <a class="tv-footer__link" href="" target="_blank">帮助
+                        &amp; 维基</a>
+                    <a class="tv-footer__link" href="" target="_blank">常见问题</a>
+                    <a class="tv-footer__link" href="">关于我们</a>
+                </div>
+            </div>
+            <div class="tv-footer__column tv-footer__links-group js-expand">
+                <div class="tv-footer__links-group-title js-expand__title">
+                    <span class="tv-footer__title">关于</span>
+                    <span class="tv-caret"></span>
+                </div>
+                <div class="tv-footer__links-group-body js-expand__body">
+                    <a href="" class="tv-footer__link">如何运作</a>
+                    <a href="" class="tv-footer__link">功能特色</a>
+                    <a href="" class="tv-footer__link">版本比较</a>
+                    <a href="" class="tv-footer__link">相关新闻</a>
+                    <a href="" class="tv-footer__link">使用条款</a>
+                    <a href="" class="tv-footer__link">风险预警</a>
+                    <a href="" class="tv-footer__link">隐私政策</a>
+                    <a href="" class="tv-footer__link">Cookies政策</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tv-footer__rights">
+        <div class="tv-footer__inner tv-footer__inner--rights tv-layout-width">
+            <div class="tv-footer__wrap">
+                <div class="tv-footer__column">&copy; 2018 Invest_View_Vip<br>
+                    投资视窗
+                </div>
+                <div class="tv-footer__column">
+                    <span class="i-float_left">创建：<a style="color: #3bb3e0">&nbsp;LR_V &nbsp;</a></span> <span
+                        class="tv-footer__love-logo i-float_left"><svg
+                        width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg"><path d=""/></svg></span>
+                </div>
+                <div class="tv-footer__column">
+                    来自于创建者 <a href="http://www.InvestView.cn/" target="_blank">&nbsp;Invest_View</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

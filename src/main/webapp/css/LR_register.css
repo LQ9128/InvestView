@@ -1,0 +1,159 @@
+
+html {
+    overflow-y: hidden;
+    font-size: 50px;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden
+}
+
+body {
+    height: 100%;
+    background: #16a085;
+    overflow: hidden;
+    font-family: "Microsoft YaHei";
+    font-size: .28em;
+    line-height: 1;
+    color: #333;
+}
+
+canvas {
+    z-index: -1;
+    position: absolute;
+}
+
+.admin_login {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin: 10% auto 0 auto;
+    padding: 40px;
+    box-shadow: 0 -15px 30px #0d957a;
+    border-radius: 5px;
+}
+
+.admin_login dt {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #45bda6;
+    text-shadow: 0 0 1px #0e947a;
+    margin-bottom: 15px;
+}
+
+.admin_login dt strong {
+    display: block;
+}
+
+.admin_login dt em {
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.admin_login dd {
+    margin: 5px 0;
+    height: 42px;
+    overflow: hidden;
+    position: relative;
+}
+
+.admin_login dd p {
+    color: #53c6b0;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.login_txtbx {
+    padding-left: 80px !important;
+    font-size: 14px !important;
+    width: 500px !important;
+    height: 28px !important;
+    padding: 8px 5% !important;
+    text-indent: 2em;
+    border: none;
+    background: #5cbdaa;
+    color: white !important;
+}
+
+.admin_login dd .login_txtbx {
+    color: #f4f4f4;
+    line-height: inherit;
+}
+
+.admin_login dd:before {
+    font-family: 'adminthemesregular';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    color: #0c9076;
+}
+
+.admin_login dd.user_icon:before {
+    content: "UserName";
+}
+
+.admin_login dd.pwd_icon:before {
+    content: "PassWord";
+}
+
+.admin_login dd.val_icon:before {
+    content: "AuthCode";
+}
+
+.admin_login dd.eml_icon:before {
+    content: "Email"
+}
+
+#myCanvas {
+    left: 200px !important;
+    width: 180px !important;
+    margin-top: -45px;
+    height: 40px;
+    margin-left: 80px;
+}
+
+#J_codetext {
+    width: 210px;
+    padding-left: 70px;
+}
+
+#J_codetext1 {
+    width: 210px;
+    padding-left: 70px !important;
+}
+
+#tzlg {
+    width: 244px;
+}
+
+#tzus {
+    width: 252px;
+}
+
+#brand {
+    width: 20px !important;
+}
+
+#rm {
+    height: 30px !important;
+    padding-left: 2px !important;
+}
+
+a {
+    color: #06c1ae;
+    text-decoration: none;
+    outline: 0;
+}
+
+.login_txtbx_tz {
+    width: 605px;
+    height: 42px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
